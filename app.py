@@ -57,5 +57,6 @@ def predict():
     result = f"{predicted_class} ({confidence:.2f}% confidence)"
     return render_template('disease_prediction.html', prediction=result)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
+
